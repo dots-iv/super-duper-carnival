@@ -152,7 +152,7 @@ text-align: center;
     p{
         font-size: 16px;
         margin-bottom: 0;
-        /* padding-bottom: 20px; */
+        padding-bottom: 30px;
     }
     
     body{
@@ -161,7 +161,7 @@ background-color:grey;
 
     }
     .header-logo{
-        margin-top: 48px;
+        margin-top: 60px;
     }
     .deskt-m{
         display: block;
