@@ -1,6 +1,7 @@
 *{
     overflow-x: hidden;
     overflow-y: hidden;
+    box-sizing: border-box;
 }
 html{
     width: 100%;
@@ -16,6 +17,10 @@ body{
     overflow: hidden;
     margin: 0 auto;
     background-size: cover;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
     background-position: center;
 }
 .deskt-m{
@@ -76,8 +81,9 @@ main{
 .container{
 padding: 0 48px;
     margin: 0 auto;
-    height: 100%;
-    min-height: 100vh;
+    
+  height: 100%;
+    /* min-height: 100vh; */
 }
 .content-box{
     height: 100%;
@@ -101,7 +107,7 @@ video{
  
     align-items: center;
     gap: 18px;
-    margin-top: 68px;
+    margin-top: 48px;
 }
 .header-logo svg{
     margin-top: 0;
@@ -148,7 +154,8 @@ text-align: center;
     }
     p{
         font-size: 16px;
-        padding-bottom: 20px;
+        margin-bottom: 0;
+        /* padding-bottom: 20px; */
     }
     
     body{
@@ -156,8 +163,15 @@ text-align: center;
 background-color:grey;
 
     }
+    .header-logo{
+        margin-top: 0;
+    }
     .deskt-m{
         display: block;
+    }
+    .content-box{
+        box-sizing: border-box;
+        padding: 20px 0;
     }
     .deskt-v{
         display: none;
