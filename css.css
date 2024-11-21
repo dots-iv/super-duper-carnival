@@ -149,9 +149,10 @@ text-align: center;
     p{
         font-size: 16px;
     }
+    
     body{
         padding-bottom: env(safe-area-inset-bottom, 20px); /* Если безопасная область не поддерживается, используем 20px */
-
+background-color:grey;
 
     }
     .deskt-m{
