@@ -157,8 +157,7 @@ text-align: center;
     
     body{
 background-color:grey;
-padding-top: env(safe-area-inset-top);
-padding-bottom: calc(env(safe-area-inset-bottom) + 10px);
+
 
     }
     .header-logo{
@@ -169,7 +168,8 @@ padding-bottom: calc(env(safe-area-inset-bottom) + 10px);
     }
     .content-box{
         box-sizing: border-box;
-        padding: 20px 0;
+        padding-top: env(safe-area-inset-top + 10px);
+padding-bottom: calc(env(safe-area-inset-bottom) + 10px);
     }
     .deskt-v{
         display: none;
